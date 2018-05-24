@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Caesar Cipher</h1>
+  <div id="root"></div>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+  <section>
+    <div>
+      <fieldset>
+        <legend>Indica el número de desplazamientos para codificar o descodificar</legend>
+        <input type="number" id="chooseSpaces">
+      </fieldset>
+    </div>
+  </section>
+  <br>
+  <section>
+    <div>
+      <textarea id="writetextE" placeholder="Escribe el mensaje a codificar" cols="80" rows="10"></textarea>
+      <br>
+      <textarea id="writetextD" placeholder="Escribe el mensaje a descodificar" cols="80" rows="10"></textarea>
+    </div>
+  </section>
+  <section>
+    <div>
+      <br>
+      <button id="btnE">CODIFICAR</button>
+      <br>
+      <button id="btnD">DESCODIFICAR</button>
+      <br>
+      <input type="reset" onclick="clearBoxes()" value="LIMPIAR">
+      <br>
+    </div>
+  </section>
+  <section>
+    <div>
+      <label>Resultado</label>
+      <br>
+      <textarea id="TxtResult" cols="80" rows="10"></textarea>
+    </div>
+  </section>
+</body>
+
 </html>
