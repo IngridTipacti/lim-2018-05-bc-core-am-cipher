@@ -8,24 +8,24 @@
 </head>
 
 <body>
-  <h1>Caesar Cipher</h1>
-  <div id="root"></div>
-  <script src="cipher.js"></script>
-  <script src="index.js"></script>
-  <section>
+    <h1>DESCUBRE EL MENSAJE</h1>
+    <div class= "Offset">
+      <p>Indica el número de desplazamientos para codificar o descodificar</p>
+        <input type="number" id="chooseSpaces">
+    </div>
+
+  <!-- <h1>DESCUBRE EL MENSAJE</h1>
     <div>
       <fieldset>
         <legend>Indica el número de desplazamientos para codificar o descodificar</legend>
         <input type="number" id="chooseSpaces">
       </fieldset>
-    </div>
-  </section>
-  <br>
+    </div> -->
+
   <section>
     <div>
-      <textarea id="writetextE" placeholder="Escribe el mensaje a codificar" cols="80" rows="10"></textarea>
+      <textarea id="writephrase" placeholder="Ingresa el texto" cols="80" rows="10"></textarea>
       <br>
-      <textarea id="writetextD" placeholder="Escribe el mensaje a descodificar" cols="80" rows="10"></textarea>
     </div>
   </section>
   <section>
@@ -46,6 +46,8 @@
       <textarea id="TxtResult" cols="80" rows="10"></textarea>
     </div>
   </section>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>

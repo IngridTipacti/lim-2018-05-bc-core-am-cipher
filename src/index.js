@@ -1,11 +1,14 @@
-var btnCipher = document.getElementById("btnC");
+let btnEncrypted = document.getElementById("btnE");
+let btnDecrypted = document.getElementById ("btnD");
+let phrase = document.getElementById("writephrase");
+let textResult = document.getElementById("TxtResult")
 
-function result (){
-   var string=document.getElementById("writetextE").value;
-   alert(string);
+
+document.getElementById("btnE").addEventListener("click",encrypted);
+function encrypted (){
+    const offset = document.getElementById("chooseSpaces").value;
+    textResult.value=cipher.encode(offset,phrase.value)
 }
-
-btnCipher.addEventListener("click",result);
 
 
 
