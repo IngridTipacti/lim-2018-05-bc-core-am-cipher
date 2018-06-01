@@ -3,16 +3,22 @@
 
 <head>
   <meta charset="utf-8">
+  <!-- Línea de código responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <h1>DESCUBRE EL MENSAJE</h1>
-    <div class= "Offset">
-      <p>Indica el número de desplazamientos para codificar o descodificar</p>
-        <input type="number" id="chooseSpaces">
-    </div>
+  <div id="root"></div>
+
+  <h1>DESCUBRE EL MENSAJE</h1>
+  <div class="Offset">
+
+    <p>Indica el número de desplazamientos para codificar o descodificar</p>
+    <input type="number" id="chooseSpaces">
+  </div>
 
   <!-- <h1>DESCUBRE EL MENSAJE</h1>
     <div>
@@ -24,7 +30,8 @@
 
   <section>
     <div>
-      <textarea id="writephrase" placeholder="Ingresa el texto" cols="80" rows="10"></textarea>
+      <!-- Área de texto para escribir mensaje -->
+      <textarea id="writephrase" placeholder="Ingresa el texto" ></textarea>
       <br>
     </div>
   </section>
@@ -35,17 +42,24 @@
       <br>
       <button id="btnD">DESCIFRAR</button>
       <br>
-      <!-- <input type="reset" onclick="clearBoxes()" value="LIMPIAR"> -->
+      <!-- Espacio para mostrar resultado -->
+      <div>
+        <label>Resultado</label>
+        <br>
+        <textarea id="TxtResult"  placeholder="Recibe tu mensaje" readonly ></textarea>
+        <!-- <input type="text" id="TxtResult" readonly="readonnly"> -->
+      </div>
+
+      <!-- Botón Limpiar casilleros -->
+      <input type="button" value="LIMPIAR" id="btnClean" class="boton">
+      <!-- <input type="reset" onclick="clearBoxes()" value="LIMPIAR">   -->
+
       <br>
     </div>
   </section>
-  <section>
-    <div>
-      <label>Resultado</label>
-      <br>
-      <textarea id="TxtResult" cols="80" rows="10"></textarea>
-    </div>
-  </section>
+
+
+
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>
