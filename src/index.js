@@ -1,5 +1,3 @@
-// let btnEncrypted = document.getElementById("btnE");
-// let btnDecrypted = document.getElementById ("btnD");
 let phrase = document.getElementById("writephrase");
 let textResult = document.getElementById("TxtResult");
 let spacenumber = document.getElementById("chooseSpaces");
@@ -7,9 +5,11 @@ let spacenumber = document.getElementById("chooseSpaces");
 
 document.getElementById("btnE").addEventListener("click", encrypted);
 function encrypted() {
-    textResult.value = cipher.encode(spacenumber.value, phrase.value);
+    // textResult.value = cipher.encode(spacenumber.value, phrase.value);
     // textResult.value=cipher.encode(offset,phrase.value)
     // alert(encriptado);
+    textResult.value = cipher.createCipherWithOffset(spacenumber.value).encode(phrase.value);
+
 }
 
 document.getElementById("btnD").addEventListener("click",decrypted);

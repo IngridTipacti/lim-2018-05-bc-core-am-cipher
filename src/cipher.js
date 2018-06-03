@@ -26,7 +26,7 @@ window.cipher = {
     return resultEncode;
   },
 
-  decode: (offset, string) => { 
+  decode: (offset, string) => {
     let resultDecode = "";
     for (let i = 0; i < string.length; i++) {
       let convAscii = string.charCodeAt(i);
@@ -44,4 +44,12 @@ window.cipher = {
     }
     return resultDecode;
   },
-}
+
+  createCipherWithOffset: (offset) => {
+    const result = {
+      encode(string) {return cipher.encode (offset,string)},
+      decode(string) {return cipher.decode (offset,string)}
+    }
+    return result;
+  }
+};

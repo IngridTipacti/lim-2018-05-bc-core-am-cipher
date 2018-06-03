@@ -11,57 +11,22 @@
 </head>
 
 <body>
-  <div id="root"></div>
-
-  <h1>DESCUBRE EL MENSAJE</h1>
-  <div class="Offset">
-
-    <p>Indica el número de desplazamientos para codificar o descodificar</p>
-    <input type="number" id="chooseSpaces">
-  </div>
-
-  <!-- <h1>DESCUBRE EL MENSAJE</h1>
-    <div>
-      <fieldset>
-        <legend>Indica el número de desplazamientos para codificar o descodificar</legend>
-        <input type="number" id="chooseSpaces">
-      </fieldset>
-    </div> -->
-
-  <section>
-    <div>
-      <!-- Área de texto para escribir mensaje -->
-      <textarea id="writephrase" placeholder="Ingresa el texto" ></textarea>
-      <br>
-    </div>
-  </section>
-  <section>
-    <div>
-      <br>
-      <button id="btnE">CIFRAR</button>
-      <br>
-      <button id="btnD">DESCIFRAR</button>
-      <br>
-      <!-- Espacio para mostrar resultado -->
-      <div>
-        <label>Resultado</label>
-        <br>
-        <textarea id="TxtResult"  placeholder="Recibe tu mensaje" readonly ></textarea>
-        <!-- <input type="text" id="TxtResult" readonly="readonnly"> -->
-      </div>
-
-      <!-- Botón Limpiar casilleros -->
-      <input type="button" value="LIMPIAR" id="btnClean" class="boton">
-      <!-- <input type="reset" onclick="clearBoxes()" value="LIMPIAR">   -->
-
-      <br>
-    </div>
-  </section>
-
-
-
-  <script src="cipher.js"></script>
-  <script src="index.js"></script>
+  <form action="">
+    <h1>CIFRADO CÉSAR ONLINE</h1>
+    <h2>¿Cuál es el número clave?</h2>
+    <input type="number" id="chooseSpaces" min="1" max="2000">
+    <!-- Área de texto para escribir mensaje -->
+    <textarea id="writephrase" placeholder="Ingresa el mensaje" ></textarea>
+    <input type="button" id="btnE" value= "OCULTAR EL MENSAJE" />
+    <input type="button" id="btnD" value= "MOSTRAR EL MENSAJE" />
+    <!-- Área para mostrar el mensaje -->
+    <h2>Recibe el Mensaje</h2>
+    <textarea id="TxtResult"  placeholder="Recibe tu mensaje" readonly ></textarea>
+    <!-- Botón Limpiar casilleros -->
+    <input type="button" value="LIMPIAR LOS CASILLEROS" id="btnClean" class="boton">
+</form>
+<script src="cipher.js"></script>
+<script src="index.js"></script>
 </body>
 
 </html>
