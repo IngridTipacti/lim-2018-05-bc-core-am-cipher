@@ -41,11 +41,12 @@ sistema ROT13.
 
 El análisis del proyecto se realizó en el grupo CODEBREAKERS, para resolver el reto organizamos las actividades del plan y conocer nuestro entorno de trabajo.
 
-![Planing1](http://subirimagen.me/uploads/20180604021823.27)
 
-![Planing2](http://subirimagen.me/uploads/20180604022415.27)
+![Planing1](http://subirimagen.me/uploads/20180604084240.png)
 
-![Planing3](http://subirimagen.me/uploads/20180604022518.27)
+[![Planing2](http://subirimagen.me/uploads/20180604084340.png)]
+
+![Planing3](http://subirimagen.me/uploads/20180604084418.png)
 
 
 Para definir el producto:
