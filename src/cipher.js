@@ -2,7 +2,7 @@ window.cipher = {
 
   encode: (offset, string) => {
     // return (offset+string);
-    let resultEncode = "";
+    let resultEncode = '';
     // let ingPhrase = string;
     // let offset1 = parseInt(offset);
     // alert("hola mundo"+offset+string);
@@ -27,7 +27,7 @@ window.cipher = {
   },
 
   decode: (offset, string) => {
-    let resultDecode = "";
+    let resultDecode = '';
     for (let i = 0; i < string.length; i++) {
       let convAscii = string.charCodeAt(i);
 

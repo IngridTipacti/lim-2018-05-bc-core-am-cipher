@@ -11,17 +11,18 @@
 </head>
 
 <body>
-  <form action="">
-    <h1>CIFRADO CÉSAR ONLINE</h1>
-    <h2>¿Cuál es el número clave?</h2>
-    <input type="number" id="chooseSpaces" min="1" max="2000">
+  <form name="form">
+    <br>
+    <h1>EL RINCÓN DE LOS MISTERIOS </h1>
+    <label>¿Cuál es el número clave?</label>
+    <input type="number" id="chooseSpaces" placeholder="Ingresa el N° de posiciones"min="1">
     <!-- Área de texto para escribir mensaje -->
-    <textarea id="writephrase" placeholder="Ingresa el mensaje" ></textarea>
+    <textarea id="writePhrase" placeholder="Escribe el mensaje" ></textarea>
     <input type="button" id="btnE" value= "OCULTAR EL MENSAJE" />
-    <input type="button" id="btnD" value= "MOSTRAR EL MENSAJE" />
+    <input type="button" id="btnD" value= "DESCIFRAR EL MENSAJE" />
     <!-- Área para mostrar el mensaje -->
-    <h2>Recibe el Mensaje</h2>
-    <textarea id="TxtResult"  placeholder="Recibe tu mensaje" readonly ></textarea>
+    <label>Recibe el Mensaje</label>
+    <textarea id="TxtResult"  placeholder="Resultado" readonly ></textarea>
     <!-- Botón Limpiar casilleros -->
     <input type="button" value="LIMPIAR LOS CASILLEROS" id="btnClean" class="boton">
 </form>
